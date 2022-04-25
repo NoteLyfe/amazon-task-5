@@ -42,7 +42,7 @@ const Admin = () => {
         <input type="radio" name="No" id='no'/>
         <label className='lable-radio' htmlFor="No">No</label><br />
         <label htmlFor="type">Variation Type</label>
-        <select name="Size" id="">
+        <select name="Size" >
         <option >Select...</option>
         <option value="Size">Size</option>
         <option value="color">Color</option>
@@ -73,6 +73,8 @@ const Admin = () => {
       <h3>Other Info</h3>
       <label className='head-discript' htmlFor="">Product Description</label><br />
       <textarea name="Description" id="Description" placeholder='Description' cols="30" rows="10"></textarea>
+
+      <button id="upload-btn">Upload Product</button>
       </div>
 
     </>
