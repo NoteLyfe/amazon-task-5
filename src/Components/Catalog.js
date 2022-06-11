@@ -7,7 +7,7 @@ const Catalog = (props) => {
       <Link to={{ pathname: `/Pdp/${props.id}/${props.name}` }}>
         <div className="box" key={props.id}>
           <div className="image">
-            <img src={props.image} alt="image.jpg" />
+            <img src={props.image} alt="shoe.jpg" />
           </div>
 
           <div className="p_info">

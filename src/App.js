@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Showcase />} />
         <Route path="/Pdp/:id/:name" element={<Pdp />} />
-        <Route path="/addProduct" element={<Admin />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
       <Footer />
     </Router>

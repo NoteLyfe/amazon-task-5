@@ -2,12 +2,12 @@ import React from 'react'
 import data from '../data.json'
 import star from '../images/Star.png'
 import { useParams } from 'react-router-dom';
-import pic1 from '../images/image1.png'
-import pic2 from '../images/image2.png'
-import pic3 from '../images/image3.png'
-import pic4 from '../images/image4.png'
-import pic5 from '../images/image5.png'
-import pic6 from '../images/image6.png'
+// import pic1 from '../images/image1.png'
+// import pic2 from '../images/image2.png'
+// import pic3 from '../images/image3.png'
+// import pic4 from '../images/image4.png'
+// import pic5 from '../images/image5.png'
+// import pic6 from '../images/image6.png'
 
 const Pdp = () => {
 
@@ -44,30 +44,10 @@ const Pdp = () => {
 
   let { id } = useParams();
 
-  let shoeImg;
-  if ((id == 1) || (id == 7) || (id == 13) || (id == 19)) {
-    shoeImg = pic1;
-  }
-  else if ((id == 2) || (id == 8) || (id == 14) || (id == 20)) {
-    shoeImg = pic2;
-  }
-  else if ((id == 3) || (id == 9) || (id == 15)) {
-    shoeImg = pic3;
-  }
-  else if ((id == 4) || (id == 10) || (id == 16)) {
-    shoeImg = pic4;
-  }
-  else if ((id == 5) || (id == 11) || (id == 17)) {
-    shoeImg = pic5;
-  }
-  else if ((id == 6) || (id == 12) || (id == 18)) {
-    shoeImg = pic6;
-  }
-
   return (
     <div className="pdp">
       <div className="pdp-img-div">
-        <img className="pdp-img" src={shoeImg} alt="Shoe Image" />
+        <img className="pdp-img" src={data[id - 1].image} alt="Shoe.jpg" />
       </div>
 
       <div className="pdp-info">

@@ -72,7 +72,7 @@
   position:absolute;
   background-color: rgb(252, 224, 252);
   top: 0;
-  right: 5px;
+  right: 25px;
   cursor: pointer;
   font-size: 25px;
   margin: 4px 5px;
@@ -315,7 +315,7 @@
 
 /* add product */
 
-.client h1{
+.admin h1{
   text-align: center;
   margin-top: 15px;
   padding-top: 15px;
@@ -323,9 +323,9 @@
   margin-bottom: 10px;
 }
 
-.drag-drop{
+#drag-drop{
   width: 80%;
-  min-height: 400px;
+  height: 50vh;
   border: 2px dotted grey;
   background-color: #FAFAFA;
   margin: auto;
@@ -334,6 +334,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#img {
+  border-radius: 20px;
+  height: 50vh;
+  width: 50%;
+}
+
+#upload{
+  width: 235px;
+}
+
+#addProductImage{
+  width: 248px;
+  height: 35px;
+  border-radius: 8px;
 }
 
 hr{
@@ -370,7 +386,7 @@ input{
 } 
 
 select{
-  width: 70%;
+  width: 71%;
   height: 30px;
   margin: 4px;
   padding-left: 10px;
@@ -494,19 +510,25 @@ textarea{
   }
 
   .pdp-info{
-    width: 380px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }  
 
+  #img {
+    width: 100%;
+  }
+
   input{
     width: 100%;
   }
 
   select{
-    width: 100%;
+    width: 103%;
   }
 
   #main-footer{
